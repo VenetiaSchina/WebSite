@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagine Dragons</title>
+    <link rel="stylesheet" href="styleBase.css">
+    <link rel="stylesheet" href="styleSongs.css">
+    <script src="https://kit.fontawesome.com/d33627e07c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        
+        <div class="social-icons">
+            <a href="https://www.facebook.com/ImagineDragons" target="_blank"><img src="icons/Facebook-Logo--Streamline-Micro.png" alt="Facebook"></a>
+            <a href="https://twitter.com/Imaginedragons" target="_blank"><img src="icons/X-Logo--Streamline-Ultimate.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/imaginedragons/" target="_blank"><img src="icons/Instagram-Logo-1--Streamline-Ultimate.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/user/ImagineDragonsVEVO" target="_blank"><img src="icons/Video-Player--Streamline-Ultimate.png" alt="YouTube"></a>
+            <a href="https://open.spotify.com/artist/53XhwfbYqKCa1cC15pYq2q" target="_blank"><img src="icons/Spotify-Logo-2--Streamline-Ultimate.png" alt="Spotify"></a>
+            <!-- Add more social media icons with their respective links -->
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Favorite Songs.html">Favorite Songs</a></li>
+                <li><a href="History.html">History</a></li>
+                <li><a href="Photos.html">Photos</a></li>
+                <li><a href="Videos.html">Videos</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+
+        <h1>Imagine Dragons</h1>
+
+    </header>
+
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div id="icons">
+                <div class="circle"> 
+                    <i class="fa-solid fa-bars" id="barsIcon"></i>
+                </div>
+                </div>
+            </nav>
+            <div class="song-info">
+                <img src="" class="song-img" alt="Song cover">
+                <h1 class="song-title"></h1>
+                <p class="song-artist"></p>
+              </div>
+
+            <audio id="song" preload="none">
+                <!-- Add your songs here -->
+                <source src="songs/y2mate.com - Imagine Dragons  Bones Official Lyric Video.mp3" type="audio/mpeg">
+                <source src="songs/y2mate.com - Imagine Dragons x JID  Enemy Lyrics.mp3" type="audio/mpeg">
+                <source src="songs/y2mate.com - Imagine Dragons  Thunder Lyrics.mp3" type="audio/mpeg">
+                <source src="songs/y2mate.com - Imagine Dragons  Demons Lyrics.mp3" type="audio/mpeg">
+                <source src="songs/y2mate.com - Imagine Dragons  Believer Lyrics.mp3" type="audio/mpeg">
+                <source src="songs/y2mate.com - Imagine Dragons  Bad Liar Lyrics.mp3" type="audio/mpeg">
+                <source src="songs/y2mate.com - Imagine Dragons  Radioactive Lyrics.mp3" type="audio/mpeg">
+                <source src="songs/y2mate.com - Imagine Dragons  Whatever It Takes Lyrics  Lyric Video.mp3" type="audio/mpeg">
+                <source src="songs/y2mate.com - Imagine Dragons  Natural Lyrics.mp3" type="audio/mpeg">
+                <source src="songs/y2mate.com - Warriors ft Imagine Dragons  Worlds 2014  League of Legends.mp3" type="audio/mpeg">
+                <source src="songs/y2mate.com - Im So Sorry.mp3" type="audio/mpeg">
+                <source src="songs/y2mate.com - Battle Cry.mp3" type="audio/mpeg">
+                <source src="songs/y2mate.com - Imagine Dragons  Gold Audio.mp3" type="audio/mpeg">
+                <source src="songs/y2mate.com - Imagine Dragons  Ready Aim Fire Audio.mp3" type="audio/mpeg">
+                <source src="songs/y2mate.com - Who We Are.mp3" type="audio/mpeg">
+                <source src="songs/y2mate.com - Imagine Dragons  I Bet My Life Audio.mp3" type="audio/mpeg">
+                <source src="songs/y2mate.com - Eyes Closed  Imagine Dragons Audio.mp3" type="audio/mpeg">
+                <source src="songs/y2mate.com - Imagine Dragons  Not Today Audio.mp3" type="audio/mpeg">
+                <source src="songs/y2mate.com - Friction.mp3" type="audio/mpeg">
+                <source src="songs/y2mate.com - Imagine Dragons   Mad World  lyrics.mp3" type="audio/mpeg">
+
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div class="backward"><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div class="forward"><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+        <div class="song-list-overlay" id="song-list-overlay"> <!-- Added class and id -->
+            <ul>
+              <li data-index="0">Bones - Imagine Dragons</li>
+              <li data-index="1">Enemy - Imagine Dragons x JID</li>
+              <li data-index="2">Thunder - Imagine Dragons</li>
+              <li data-index="3">Demons - Imagine Dragons</li>
+              <li data-index="4">Believer - Imagine Dragons</li>
+              <li data-index="5">Bad Liar - Imagine Dragons</li>
+              <li data-index="6">Radioactive - Imagine Dragons</li>
+              <li data-index="7">Whatever it Takes - Imagine Dragons</li>
+              <li data-index="8">Natural - Imagine Dragons</li>
+              <li data-index="9">Warriors - Imagine Dragons</li>
+              <li data-index="10">I'm so sorry - Imagine Dragons</li>
+              <li data-index="11">Battle Cry - Imagine Dragons</li>
+              <li data-index="12">Gold - Imagine Dragons</li>
+              <li data-index="13">Ready Aim Fire - Imagine Dragons</li>
+              <li data-index="14">Who we Are - Imagine Dragons</li>
+              <li data-index="15">I Bet my Life - Imagine Dragons</li>
+              <li data-index="16">Eyes Closed - Imagine Dragons</li>
+              <li data-index="17">Not Today - Imagine Dragons</li>
+              <li data-index="18">Friction - Imagine Dragons</li>
+              <li data-index="19">Mad World - Imagine Dragons</li>
+              <!-- Add more songs here -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p style="color: whitesmoke;">&copy; All rights reserved Imagine Dragons.  
+        <a href="https://www.imaginedragonsmusic.com" target="_blank">Official Site</a></p>
+    </div>
+
+    <script src="script2.js"></script>
+
+</body>
+</html> 
+

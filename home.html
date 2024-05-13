@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagine Dragons</title>
+    <link rel="stylesheet" href="styleHome.css">
+    <link rel="stylesheet" href="styleBase.css">
+</head>
+<body>
+    <header>
+        
+        <div class="social-icons">
+            <a href="https://www.facebook.com/ImagineDragons" target="_blank"><img src="icons/Facebook-Logo--Streamline-Micro.png" alt="Facebook"></a>
+            <a href="https://twitter.com/Imaginedragons" target="_blank"><img src="icons/X-Logo--Streamline-Ultimate.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/imaginedragons/" target="_blank"><img src="icons/Instagram-Logo-1--Streamline-Ultimate.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/user/ImagineDragonsVEVO" target="_blank"><img src="icons/Video-Player--Streamline-Ultimate.png" alt="YouTube"></a>
+            <a href="https://open.spotify.com/artist/53XhwfbYqKCa1cC15pYq2q" target="_blank"><img src="icons/Spotify-Logo-2--Streamline-Ultimate.png" alt="Spotify"></a>
+            <!-- Add more social media icons with their respective links -->
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Favorite Songs.html">Favorite Songs</a></li>
+                <li><a href="History.html">History</a></li>
+                <li><a href="Photos.html">Photos</a></li>
+                <li><a href="Videos.html">Videos</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+
+        <h1>Imagine Dragons</h1>
+
+    </header>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" class="modal-content">
+      </div>
+
+    <div class="content">
+        <div class="content-text">
+            <img src="photos/back.jpg" alt="Imagine Dragons" class="content-image" onclick="toggleImageSize(this)">
+            <div>
+                <h2>Imagine Dragons</h2>
+                <p>Imagine Dragons are an American pop rock band formed in 2008, 
+                   based in Las Vegas, Nevada, and currently consists of lead singer 
+                   Dan Reynolds, guitarist Wayne Sermon, bassist Ben McKee and drummer Daniel Platzman. 
+                   <br> Also known as: Ragged Insomnia. 
+                   <br> Genres: Pop rock, electro pop, pop indie, pop arena, rock, alternative rock </p>
+            </div>
+        </div>
+    </div>
+    <div class="slideshow">
+        <img src="photos/Imagine-Dragons-Eyes-Closed1.png" alt="Slideshow Image" class="slideshow-image">
+    </div>
+    
+
+    <div class="image-gallery">
+        <div class="image-container">
+            <a href="https://open.spotify.com/album/6nxDQi0FeEwccEPJeNySoS" target="_blank"><img src="covers/Imagine-Dragons-Night-Visions-album-cover-820.png" alt="Image 1"></a>
+        </div>
+        <div class="image-container">
+            <a href="https://open.spotify.com/album/0Ikw6ho559687KCPbSjr0K" target="_blank"><img src="covers/Imagine_Dragons_-_Smoke_+_Mirrors.png" alt="Image 2"></a>
+        </div>
+        <div class="image-container">
+            <a href="https://open.spotify.com/album/33pt9HBdGlAbRGBHQgsZsU" target="_blank"><img src="covers/Imagine-Dragons-Evolve-album-cover-820.png" alt="Image 3"></a>
+        </div>
+        <div class="image-container">
+            <a href="https://open.spotify.com/album/3JfSxDfmwS5OeHPwLSkrfr" target="_blank"><img src="covers/Origins_cover.png" alt="Image 4"></a>
+        </div>
+        <div class="image-container">
+            <a href="https://open.spotify.com/album/6yiXkzHvC0OTmhfDQOEWtS" target="_blank"><img src="covers/Imagine_Dragons_Mercury_album_cover_2022.webp.png" alt="Image 6"></a>
+        </div>
+        <div class="image-container">
+            <a href="https://open.spotify.com/album/0fQaGkCbRIg5z7ta2SCrY0" target="_blank"><img src="covers/vegas.jpg" alt="Image 5"></a>
+        </div>
+    </div>  
+
+    <div class="copyright">
+        <p style="color: whitesmoke;">&copy; All rights reserved Imagine Dragons.  
+        <a href="https://www.imaginedragonsmusic.com" target="_blank">Official Site</a></p>
+    </div>
+
+    <script src="script.js"></script>  
+
+</body>
+</html>
+

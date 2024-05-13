@@ -1,0 +1,77 @@
+body {
+    background-color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-image: url("photos/papers.co-ad38-imagine-dragons-top-36-3840x2400-4k-wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    text-align: center;
+}
+
+.social-icons {
+    position: absolute;
+    top: 20px; /* Adjust top position as needed */
+    left: 20px; /* Adjust left position as needed */
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 20px; /* Adjust icon size as needed */
+    height: 20px;
+}
+
+header h1 {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: justify;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffa500;
+}
+
+.copyright {
+    background-color: #333; /* Background color for the copyright section */
+    color: #fff; /* Text color */
+    text-align: center; /* Center-align the text */
+    padding: 20px; /* Add some padding for better readability */
+    position: relative; /* Set position to relative to place it under image-gallery */
+    margin-top: 20px; /* Add space between image gallery and copyright section */
+}
+
+.copyright a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline from the link */
+    transition: color 0.3s; /* Add transition effect for color change */
+}
+
+.copyright a:hover {
+    color: #ffa500; /* Change color to orange on hover */
+}
