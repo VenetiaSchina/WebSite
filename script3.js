@@ -8,16 +8,10 @@ document.querySelector('.gallery').addEventListener('mouseleave', () => {
     document.querySelector('.gallery').style.animationPlayState = 'running';
 });
 
-// Function to handle right-click on an image
+// Function to handle image click
 function openImage(event) {
-    event.preventDefault(); // Prevent default right-click behavior (context menu)
-    if (event.type === 'contextmenu') {
-        alert("You right-clicked the image!");
-    } else {
-        // Handle what happens when an image is clicked
-        // Open the image in a new window
-        window.open(event.target.src, '_blank');
-    }
+    // Open the image in a new window when clicked
+    window.open(event.target.src, '_blank');
 }
 
 // Add event listeners to each image
@@ -35,12 +29,3 @@ document.querySelectorAll('.gallery img').forEach(item => {
         document.querySelector('.gallery').style.animationPlayState = 'running';
     });
 });
-
-
-
-
-
-
-
-
-

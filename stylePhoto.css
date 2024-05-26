@@ -1,15 +1,4 @@
-body {
-    background-color: whitesmoke;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
-header {
-    background-image: url("photos/papers.co-ad38-imagine-dragons-top-36-3840x2400-4k-wallpaper.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 100px;
-    text-align: center;
-}
 
 .container {
     display: flex;
@@ -49,24 +38,6 @@ header {
     animation-play-state: paused;
 }
 
-.copyright {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    margin-top: 20px;
-}
-
-.copyright a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.copyright a:hover {
-    color: #ffa500;
-}
 
 @keyframes rotate {
     from {
